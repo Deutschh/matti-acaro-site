@@ -1,0 +1,36 @@
+/* 1. Importa a fonte do Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* 2. Importa o Tailwind */
+@import "tailwindcss";
+
+/* 3. Configura o Tema (Isso substitui o tailwind.config.js) */
+@theme {
+  --font-sans: "Poppins", sans-serif;
+}
+
+/* ADICIONE ISSO AQUI EMBAIXO: */
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+}
+
+#root {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+@keyframes scroll-vertical {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+
+.animate-scroll-vertical {
+  animation: scroll-vertical 40s linear infinite; /* 40s para ser bem suave */
+}
+
+/* Pausa a animação quando o mouse passa por cima para ler */
+.animate-scroll-vertical:hover {
+  animation-play-state: paused;
+}
