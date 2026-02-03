@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Sparkles, ArrowRightLeft, ZoomIn, CheckCircle2 } from 'lucide-react';
-import Antes from '../assets/antes.jpeg'; // Substitua pelo caminho real da imagem
-import Depois from '../assets/depois.jpeg'; // Substitua pelo caminho real da imagem
+import Antes from '../assets/Antes.jpeg'; // Substitua pelo caminho real da imagem
+import Depois from '../assets/Depois.jpeg'; // Substitua pelo caminho real da imagem
 
 // === COMPONENTE DO SLIDER ANTES/DEPOIS ===
 const ComparisonSlider = () => {
