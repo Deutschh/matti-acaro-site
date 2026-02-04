@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 // 1. Adicionei 'Droplets' aos imports para o ícone da Rainbow
 import { Home, User, Sparkles, Image, MessageCircle, HelpCircle, Instagram, Star, Droplets } from 'lucide-react';
+import SEO from './SEO.jsx';
 
 export default function SideNav() {
   const [activeSection, setActiveSection] = useState('Inicio');
@@ -49,6 +50,13 @@ export default function SideNav() {
   }, []);
 
   return (
+        <>
+          <SEO 
+            title="Limpeza de Sofás e Rainbow"
+            description="Higienização profissional de estofados e assistência técnica autorizada Rainbow em São Paulo. Agende sua visita e elimine ácaros hoje."
+            keywords="limpeza de sofá, higienização de estofados, rainbow aspirador, manutenção rainbow sp, matti ácaro"
+            url="https://www.grupomattiacaro.com.br/"
+          />
     <div 
       className={`
         fixed left-6 top-1/2 -translate-y-1/2 z-50 hidden lg:flex flex-col gap-4 
@@ -122,5 +130,6 @@ export default function SideNav() {
 
       </div>
     </div>
+    </>
   );
 }

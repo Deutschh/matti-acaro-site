@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Plus, Minus, MessageCircle, HelpCircle } from 'lucide-react';
+import SEO from './SEO.jsx';
 
 export default function FAQ() {
   
@@ -38,6 +39,14 @@ export default function FAQ() {
   };
 
   return (
+    <>
+      <SEO 
+        title="Limpeza de Sofás e Rainbow"
+        description="Higienização profissional de estofados e assistência técnica autorizada Rainbow em São Paulo. Agende sua visita e elimine ácaros hoje."
+        keywords="limpeza de sofá, higienização de estofados, rainbow aspirador, manutenção rainbow sp, matti ácaro"
+        url="https://www.grupomattiacaro.com.br/"
+      />
+      
     <section id="FAQ" className="py-24 bg-slate-50 relative overflow-hidden">
       
       {/* Elemento Decorativo (Círculo Sutil) */}
@@ -120,5 +129,6 @@ export default function FAQ() {
         </div>
       </div>
     </section>
+    </>
   );
 }

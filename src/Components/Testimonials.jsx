@@ -1,7 +1,7 @@
 import React from 'react';
 import { Star, Quote, CheckCircle } from 'lucide-react';
 import LogoGrande from '../assets/Logo-Grande.svg'; 
-
+import SEO from './SEO.jsx';
 export default function Testimonials() {
 
   // Dados dos depoimentos (Use fotos reais se tiver, senão use essas genéricas de banco)
@@ -52,6 +52,13 @@ export default function Testimonials() {
   const infiniteReviews = [...reviews, ...reviews];
 
   return (
+        <>
+          <SEO 
+            title="Limpeza de Sofás e Rainbow"
+            description="Higienização profissional de estofados e assistência técnica autorizada Rainbow em São Paulo. Agende sua visita e elimine ácaros hoje."
+            keywords="limpeza de sofá, higienização de estofados, rainbow aspirador, manutenção rainbow sp, matti ácaro"
+            url="https://www.grupomattiacaro.com.br/"
+          />
     <section id="Depoimentos" className="py-24 bg-blue-900 overflow-hidden relative">
       
       {/* Background Decorativo */}
@@ -157,5 +164,6 @@ export default function Testimonials() {
         </div>
       </div>
     </section>
+    </>
   );
 }

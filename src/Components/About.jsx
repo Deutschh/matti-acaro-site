@@ -1,9 +1,19 @@
 import React from 'react';
 import { CheckCircle, Shield, Zap } from 'lucide-react';
 import EquipmentImg from "../assets/Nasa.svg"; 
-
+import SEO from './SEO.jsx';
 export default function About() {
   return (
+    <>
+      <SEO 
+        title="Limpeza de Sofás e Rainbow"
+        description="Higienização profissional de estofados e assistência técnica autorizada Rainbow em São Paulo. Agende sua visita e elimine ácaros hoje."
+        keywords="limpeza de sofá, higienização de estofados, rainbow aspirador, manutenção rainbow sp, matti ácaro"
+        url="https://www.grupomattiacaro.com.br/"
+      />
+      
+
+    
     <section id="Sobre" className="py-20 overflow-hidden flex">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -89,5 +99,6 @@ export default function About() {
         </div>
       </div>
     </section>
+    </>
   );
 }

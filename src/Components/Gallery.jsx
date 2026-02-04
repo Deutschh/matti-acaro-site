@@ -3,6 +3,7 @@ import { Sparkles, ArrowRightLeft, ZoomIn, CheckCircle2 } from 'lucide-react';
 import Antes from '../assets/Antes.jpeg'; // Substitua pelo caminho real da imagem
 import Depois from '../assets/Depois.jpeg'; // Substitua pelo caminho real da imagem
 import Colchao from '../assets/Colchao.jpeg'; // Substitua pelo caminho real da imagem
+import SEO from './SEO.jsx';
 
 // === COMPONENTE DO SLIDER ANTES/DEPOIS ===
 const ComparisonSlider = () => {
@@ -81,6 +82,13 @@ export default function Gallery() {
   ];
 
   return (
+        <>
+          <SEO 
+            title="Limpeza de Sofás e Rainbow"
+            description="Higienização profissional de estofados e assistência técnica autorizada Rainbow em São Paulo. Agende sua visita e elimine ácaros hoje."
+            keywords="limpeza de sofá, higienização de estofados, rainbow aspirador, manutenção rainbow sp, matti ácaro"
+            url="https://www.grupomattiacaro.com.br/"
+          />
     <section id="Galeria" className="py-24 bg-white w-full overflow-hidden relative">
       
       {/* Elementos Decorativos de Fundo (Brilhos) */}
@@ -166,5 +174,6 @@ export default function Gallery() {
 
       </div>
     </section>
+    </>
   );
 }

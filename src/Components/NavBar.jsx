@@ -5,6 +5,7 @@ import { MessageCircle, Home, Info, Briefcase, Image, HelpCircle, Instagram, Use
 // Substitua pelo caminho real da sua logo
 import Logo from '../assets/logo.svg'; 
 
+import SEO from './SEO.jsx';
 // Ícones do Menu
 const MenuIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-blue-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -44,6 +45,13 @@ const Navbar = () => {
   };
 
   return (
+        <>
+          <SEO 
+            title="Limpeza de Sofás e Rainbow"
+            description="Higienização profissional de estofados e assistência técnica autorizada Rainbow em São Paulo. Agende sua visita e elimine ácaros hoje."
+            keywords="limpeza de sofá, higienização de estofados, rainbow aspirador, manutenção rainbow sp, matti ácaro"
+            url="https://www.grupomattiacaro.com.br/"
+          />
     <div className="w-full h-20 ovwerflow-hidden">
       
       {/* ================= BARRA MOBILE ================= */}
@@ -201,6 +209,7 @@ const Navbar = () => {
       </div>
 
     </div>
+    </>
   );
 };
 

@@ -2,6 +2,7 @@ import React from 'react';
 import { MessageCircle, ShieldCheck, Star, Clock } from 'lucide-react';
 import HeroImg from "../assets/Imagen-inicio.png"; 
 import Aspirador from "../assets/Aspirador.svg";
+import SEO from './SEO.jsx';
 
 // --- COLOQUE O COMPONENTE DO BOTÃO AQUI OU IMPORTE DE UM ARQUIVO ---
 const CleaningButton = () => (
@@ -29,6 +30,13 @@ const CleaningButton = () => (
 
 export default function Hero() {
   return (
+    <>
+      <SEO 
+        title="Limpeza de Sofás e Rainbow"
+        description="Higienização profissional de estofados e assistência técnica autorizada Rainbow em São Paulo. Agende sua visita e elimine ácaros hoje."
+        keywords="limpeza de sofá, higienização de estofados, rainbow aspirador, manutenção rainbow sp, matti ácaro"
+        url="https://www.grupomattiacaro.com.br/"
+      />
     <section id="Inicio" className="relative pt-24 pb-12 lg:pt-28 lg:pb-24 ">
       
       <div className="max-w-10/12 mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -107,5 +115,6 @@ export default function Hero() {
         </div>
       </div>
     </section>
+    </>
   );
 }
