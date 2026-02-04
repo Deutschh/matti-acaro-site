@@ -43,12 +43,12 @@ export default function Hero() {
               Especialistas em Eliminação de Ácaros
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-blue-900 leading-tight mb-6">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-blue-900 leading-tight mb-6">
               Seu estofado limpo, <br className="hidden lg:block"/>
               <span className="text-blue-600">novo e saudável.</span>
             </h1>
 
-            <p className="text-lg text-gray-600 mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
+            <p className="text-base sm:text-lg text-gray-600 mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
               A <b>Matti Ácaro</b> devolve a vida ao seu sofá e protege sua família. Higienização profunda com produtos biodegradáveis e secagem rápida.
             </p>
 

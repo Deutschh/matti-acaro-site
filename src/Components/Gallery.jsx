@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Sparkles, ArrowRightLeft, ZoomIn, CheckCircle2 } from 'lucide-react';
 import Antes from '../assets/Antes.jpeg'; // Substitua pelo caminho real da imagem
 import Depois from '../assets/Depois.jpeg'; // Substitua pelo caminho real da imagem
+import Colchao from '../assets/Colchao.jpeg'; // Substitua pelo caminho real da imagem
 
 // === COMPONENTE DO SLIDER ANTES/DEPOIS ===
 const ComparisonSlider = () => {
@@ -75,7 +76,7 @@ export default function Gallery() {
   const projects = [
     { id: 1, title: "Sofá Retrátil 3 Lugares", tag: "Remoção de Manchas", img: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" },
     { id: 2, title: "Poltronas de Veludo", tag: "Higienização Profunda", img: "https://images.unsplash.com/photo-1567016432779-094069958ea5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" },
-    { id: 3, title: "Colchão King Size", tag: "Anti-Ácaros", img: "https://images.unsplash.com/photo-1631049552057-403cdb8f0658?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" },
+    { id: 3, title: "Colchão King Size", tag: "Anti-Ácaros", img: Colchao },
     { id: 4, title: "Cadeiras de Jantar", tag: "Revitalização de Cor", img: "https://cdn.awsli.com.br/2500x2500/2600/2600636/produto/262126827/cadeira-para-mesa-de-jantar-4-lara-superior-preta-ctjnjuyw0z.jpeg" },
   ];
 
